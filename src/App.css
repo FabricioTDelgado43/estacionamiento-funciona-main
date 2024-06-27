@@ -46,9 +46,30 @@
 }
 .login:hover, .registrar:hover
 {
-    box-shadow: 0px 10px 10px 10px #04aa1f;
+    box-shadow: 1px 1px 20px 15px #fdfdfd;
 }
-
+@keyframes borderAnimation
+{
+    0% {
+        border: 3px solid yellow;
+    }
+    25% {
+        border: 3px solid red;
+    }
+    50% {
+        border: 3px solid green;
+    }
+    75% {
+        border: 3px solid red;
+    }
+    100% {
+        border: 3px solid  yellow;
+    }
+}
+.animated-border
+{
+    animation: borderAnimation 2s infinite;
+}
 .login h2, .registrar h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -136,9 +157,11 @@
     width: 50%;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #04aa1f;
-    border-radius: 1rem;
+    /* border: 1px solid #04aa1f; */
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
     transition: 2.3s;
+    margin-top: 50px;
     /* background-color: #f9f9f9; */
 }
 
@@ -156,7 +179,7 @@
 }
 .buscar-auto:hover
 {
-    box-shadow: 0px 3px 3px 3px #04aa1f;
+    /* box-shadow: 0px 6px 3px 3px #04aa1f; */
     transition: 0.3s;
 }
 
@@ -171,6 +194,8 @@
     border: 1px solid #056615;
     border-radius: 1rem;
     padding: 5px;
+    text-align: center;
+    
 }
 div{
     margin-left: 0.5px;
@@ -210,3 +235,4 @@ div{
     margin: 20px 0;
     text-transform: uppercase;
 }
+

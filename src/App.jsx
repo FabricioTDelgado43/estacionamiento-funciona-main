@@ -170,16 +170,16 @@ const App = () => {
             </div>
             <div className='login-registrar caja-form'>
                 {showLoginForm && !loggedIn && (
-                    <div className='login'>
+                    <div className='login animated-border'>
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Nombre de usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
+                        <input type="text" placeholder="Nombre de usuario" value={username} onChange={(e) => setUsername(e.target.value)} required />
                         <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
                         <button onClick={login}>Iniciar Sesión</button>
                         <button onClick={() => setShowLoginForm(false)}>Registrar</button>
                     </div>
                 )}
                 {!loggedIn && !showLoginForm && (
-                    <div className='registrar'>
+                    <div className='registrar animated-border'>
                         <h2>Registrar</h2>
                         <input type="text" placeholder="Nombre de usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
                         <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
@@ -190,7 +190,7 @@ const App = () => {
             </div>
             {loggedIn && (
                 <div>
-                    <div className='agregar-auto-form'>
+                    <div className='agregar-auto-form '>
                         <h2>Agregar Vehículo</h2>
                         <label>Modelo</label>
                         <input type="text" placeholder="Modelo" value={modelo} onChange={(e) => setModelo(e.target.value)} />
@@ -211,7 +211,7 @@ const App = () => {
                                     auto.patente.toLowerCase().includes(search.toLowerCase())
                             )
                             .map((auto) => (
-                                <div key={auto._id} className="auto-card">
+                                <div key={auto._id} className="auto-card animated-border">
                                     <p>Modelo: {auto.modelo}</p>
                                     <p>Patente: {auto.patente}</p>
                                     <p>Hora de Ingreso: {new Date(auto.horaIngreso).toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short', hour12: true })}</p>
