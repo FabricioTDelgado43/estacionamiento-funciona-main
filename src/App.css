@@ -1,0 +1,212 @@
+/* Estilos generales */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #333;
+    color: #fff;
+}
+
+.boton {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 20;
+    position: absolute;
+    margin-left: 1200px;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.login-registrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.login, .registrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 150px;
+    border: 2px solid #04aa1f;
+    border-radius: 4px;
+    margin: 50px;
+    width: 300px;
+    transition: 0.5s;
+}
+.login:hover, .registrar:hover
+{
+    box-shadow: 0px 10px 10px 10px #04aa1f;
+}
+
+.login h2, .registrar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.login input, .registrar input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login button, .registrar button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: #055a137e;
+    transition: 0.3s;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login button:hover, .registrar button:hover {
+    background-color: #04aa1f;
+}
+
+/* Estilos para el formulario de agregar autos */
+.agregar-auto-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #04aa1f;
+    border-radius: 1rem;
+    margin-top: -50px;
+    transition: 2.3s;
+    /* background-color: #f9f9f9; */
+}
+.agregar-auto-form:hover
+{
+    box-shadow: 0px 3px 3px 3px #04aa1f;
+    transition: 0.3s;
+}
+
+.agregar-auto-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.agregar-auto-form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.agregar-auto-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.agregar-auto-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: #04aa1f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.agregar-auto-form button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para la búsqueda de autos */
+.buscar-auto {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #04aa1f;
+    border-radius: 1rem;
+    transition: 2.3s;
+    /* background-color: #f9f9f9; */
+}
+
+.buscar-auto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.buscar-auto input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.buscar-auto:hover
+{
+    box-shadow: 0px 3px 3px 3px #04aa1f;
+    transition: 0.3s;
+}
+
+.autos-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.auto-card {
+    width: 30%; /* Ajusta el tamaño de cada tarjeta de auto */
+    margin-right: 2%; /* Agrega un margen entre las tarjetas */
+    margin-bottom: 2rem; /* Agrega un margen inferior a cada tarjeta */
+    border: 1px solid #056615;
+    border-radius: 1rem;
+    padding: 5px;
+}
+div{
+    margin-left: 0.5px;
+}
+.buscar{
+    width: 50%;
+}
+
+.facturando
+{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-left: 70px;
+    color: #04aa1f;
+}
+
+.boton-cobrar
+{
+    color:#04aa1f;
+    margin-left: 80px;
+}
+.input-cobrar
+{
+    color: #fff;
+    border: transparent 1px;
+    padding: 15px 10px;
+    margin-left: 20px;
+    border-radius: 2px;
+    width: 15vw;
+    border-radius: 1rem;
+}
+.vehiculo-medio
+{
+    text-align: center;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
